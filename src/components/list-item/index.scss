@@ -1,0 +1,39 @@
+$theme-color: rgba(41, 41, 41, 1);
+.list-item{
+  padding: 0 25px;
+  max-width: 1080px;
+  padding-top: 28px;
+  .title{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 28px;
+    overflow: hidden;
+    text-overflow: ellipsis; //文本溢出显示省略号
+    white-space: nowrap; //文本不会换行
+    color: $theme-color;
+    margin-bottom: 5px;
+  }
+  .brief{
+    color: rgba(0,0,0,0.8);
+    margin-bottom: 0;
+  }
+  .sub-area{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(230, 230, 230, 1);
+    padding: 15px 0;
+    .tag{
+      padding: 0 3px;
+      line-height:16px ;
+    }
+  }
+  &:hover{
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    transition: all 0.5s ease-in;
+    .sub-area{
+      border-color:rgba(41, 41, 41, 0);
+      transition: all 0.3s ease-in;
+    }
+  }
+}

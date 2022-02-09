@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { getList } from '../api';
-import { List, Typography } from 'antd'
+import ListItem from '../components/list-item/listItem';
 
 function Home() {
   const [list, setList] = useState<Array<any>>()
@@ -9,14 +9,10 @@ function Home() {
       setList(res.list)
     })
   }, []);
-  return <List
-  dataSource={list}
-  renderItem={item => (
-    <List.Item>
-      <Typography.Text mark>[ITEM]</Typography.Text> {item.title}
-    </List.Item>
-  )}
-/>
+  return <div>
+    {list?.length && list.map(item => <ListItem data={item} />)}
+    
+  </div> 
 }
 
 export default Home;

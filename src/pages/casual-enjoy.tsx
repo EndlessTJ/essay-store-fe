@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 
 function CasualEnjoy() {
-  return <div>CasualEnjoy</div>
+  return <div>功能暂时未开放～～～</div>
 }
 
 export default CasualEnjoy;

@@ -10,7 +10,7 @@ function Home() {
     })
   }, []);
   return <div>
-    {list?.length && list.map(item => <ListItem data={item} />)}
+    {list?.length && list.map(item => <ListItem key={item._id} data={item} />)}
     
   </div> 
 }

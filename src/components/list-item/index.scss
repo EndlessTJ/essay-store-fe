@@ -36,4 +36,19 @@ $theme-color: rgba(41, 41, 41, 1);
       transition: all 0.3s ease-in;
     }
   }
+  .views{
+    font-size: 13px;
+    color: rgba(117, 117, 117, 1);
+    .publish-date{
+      margin-right: 15px;
+      .publish-icon{
+        transform: rotate(-30deg);
+      }
+    }
+    .view{
+      .icon{
+        margin-right: 5px;
+      }
+    }
+  }
 }

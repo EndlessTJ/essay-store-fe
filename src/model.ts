@@ -11,7 +11,7 @@ export interface ArticleListModel {
   title: string;
   createDate: Date;
   type: Array<string>;
-  content?: string;
+  content: string;
   publishDate: Date;
   updateDate: Date;
   view: number;

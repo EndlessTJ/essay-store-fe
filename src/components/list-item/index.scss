@@ -17,16 +17,6 @@ $theme-color: rgba(41, 41, 41, 1);
     color: rgba(0,0,0,0.8);
     margin-bottom: 0;
   }
-  .sub-area{
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid rgba(230, 230, 230, 1);
-    padding: 15px 0;
-    .tag{
-      padding: 0 3px;
-      line-height:16px ;
-    }
-  }
   &:hover{
     cursor: pointer;
     box-shadow: 0 3px 10px rgba(0,0,0,0.3);
@@ -34,21 +24,6 @@ $theme-color: rgba(41, 41, 41, 1);
     .sub-area{
       border-color:rgba(41, 41, 41, 0);
       transition: all 0.3s ease-in;
-    }
-  }
-  .views{
-    font-size: 13px;
-    color: rgba(117, 117, 117, 1);
-    .publish-date{
-      margin-right: 15px;
-      .publish-icon{
-        transform: rotate(-30deg);
-      }
-    }
-    .view{
-      .icon{
-        margin-right: 5px;
-      }
     }
   }
 }

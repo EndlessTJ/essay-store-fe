@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* markdown 样式 */
+@import url('./assets/typora-lark-bold-color.css');
+
+/*highlightjs 样式*/
+@import url('./assets/highjs.css');
+
+.hljs{
+  background: #f5f6f7;
+}

@@ -1,0 +1,30 @@
+.neck-bar{
+  display: flex;
+  border-bottom: 1px solid rgba(230, 230, 230, 1);
+  padding: 15px 0;
+  .tag{
+    padding: 0 3px;
+    line-height:16px ;
+  }
+  .tags{
+    margin-right: 25px;
+  }
+  .views{
+    font-size: 13px;
+    color: rgba(117, 117, 117, 1);
+    .publish-date{
+      margin-right: 15px;
+      .publish-icon{
+        transform: rotate(-30deg) translate(2px,-1px);
+      }
+    }
+    .view{
+      .icon{
+        margin-right: 5px;
+      }
+    }
+  }
+  &.justify{
+    justify-content: space-between;
+  }
+}

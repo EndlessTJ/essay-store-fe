@@ -1,5 +1,5 @@
 import Home from './pages/home';
-import Article from './pages/article';
+import Article from './pages/article/article';
 import File from './pages/file';
 import CasualEnjoy from './pages/casual-enjoy';
 import { routesModel } from './model';

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { getList } from '../api';
-import ListItem from '../components/list-item/listItem';
+import { getList } from '@api/index';
+import ListItem from '@components/list-item/listItem';
 
 function Home() {
   const [list, setList] = useState<Array<any>>()

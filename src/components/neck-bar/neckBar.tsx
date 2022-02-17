@@ -1,7 +1,7 @@
 import { Tag } from 'antd';
 import { EyeOutlined, SendOutlined } from '@ant-design/icons';
-import { formatDate } from '../../utils'
-import './index.scss'
+import { formatDate } from '@/utils';
+import './index.scss';
 function NeckBar(props:  {tags: Array<string>, publishDate: Date, view: number, justify?: string, className?: string}) {
   const { tags, publishDate, view, justify, className }  = props;
   let cls = justify === 'space-between' ? "neck-bar justify" : "neck-bar";

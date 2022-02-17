@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom'
-import { ArticleListModel } from '../../model';
-import NeckBar from '../neck-bar/neckBar';
+import { ArticleListModel } from '@/model';
+import NeckBar from '@components/neck-bar/neckBar';
 import './index.scss';
 function ListItem(props: {data: ArticleListModel}) {
   const { data }  = props;

@@ -1,4 +1,4 @@
-import { get, put } from '../request';
+import { get, put } from '@/request';
 
 export const getList = async (params: {selection?: string, isFile?: Boolean, isPublish?: Boolean}) =>{
   const res = await get('/get', { params });

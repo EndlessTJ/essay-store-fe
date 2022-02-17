@@ -1,8 +1,8 @@
 import { useLocation } from "react-router-dom";
 import { useEffect, useState } from 'react';
-import { getArticle, increaseViews } from '../../api';
-import { ArticleListModel } from '../../model';
-import NeckBar from '../../components/neck-bar/neckBar';
+import { getArticle, increaseViews } from '@api/index';
+import { ArticleListModel } from '@/model';
+import NeckBar from '@components/neck-bar/neckBar';
 import './index.scss';
 
 function Article() {

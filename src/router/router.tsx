@@ -1,6 +1,6 @@
 import Home from '@/pages/home/home';
 import Article from '@/pages/article/article';
-import File from '@/pages/file';
+import File from '@/pages/file/file';
 import CasualEnjoy from '@/pages/casual-enjoy';
 import { routesModel } from '@/model';
 export const routes:Array<routesModel> = [

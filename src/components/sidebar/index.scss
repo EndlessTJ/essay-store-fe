@@ -1,0 +1,28 @@
+.sidebar{
+  border-left: 1px solid rgba(230, 230, 230, 1) ;
+  padding: 0 15px;
+  height: 100%;
+  .section{
+    border-top: 1px solid rgba(230, 230, 230, 1) ;
+    margin-top: 45px;
+    padding-top: 15px;
+    &:first-child{
+      border-top: none;
+      margin-top: 0;
+    }
+  }
+  .search-input{
+    border: 1px solid rgba(230, 230, 230, 1);
+    border-radius: 20px;
+  }
+  .tags{
+    h1{
+      font-size: 18px;
+      line-height: 22px;
+    }
+    .tag{
+      margin-bottom: 5px;
+      cursor: pointer;
+    }
+  }
+}

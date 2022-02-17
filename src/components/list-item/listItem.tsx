@@ -1,10 +1,10 @@
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
 import { ArticleListModel } from '@/model';
 import NeckBar from '@components/neck-bar/neckBar';
 import './index.scss';
 function ListItem(props: {data: ArticleListModel}) {
   const { data }  = props;
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const navigateTo = () => {
     navigate('/article', { state:{id: data._id }})
   }

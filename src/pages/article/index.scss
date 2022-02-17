@@ -1,12 +1,20 @@
 .article{
-  padding: 0 20px;
-  .title{
-    font-size: 32px;
-    line-height: 40px;
-    margin-top: 15px;
-    margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  .main-container{
+    padding: 0 20px;
+    flex: 4;
+    .title{
+      font-size: 32px;
+      line-height: 40px;
+      margin-top: 15px;
+      margin-bottom: 0;
+    }
+    .content{
+      margin-top: 30px;
+    }
   }
-  .content{
-    margin-top: 30px;
+  .side-container{
+    flex: 1;
   }
 }

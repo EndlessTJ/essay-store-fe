@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { getArticle, increaseViews } from '@api/index';
 import { ArticleListModel } from '@/model';
 import NeckBar from '@components/neck-bar/neckBar';
+import Sidebar from '@components/sidebar/sidebar';
 import './index.scss';
 
 function Article() {
@@ -17,9 +18,14 @@ function Article() {
   }, [id]);
   if(!article) return null;
   return <article className="article">
-    <h1 className="title">{article?.title}</h1>
-    <NeckBar tags={article.type} publishDate={article.publishDate} view={article.view} />
-    <section className="content" dangerouslySetInnerHTML={{ __html: article.content}}></section>
+    <div className="main-container">
+      <h1 className="title">{article?.title}</h1>
+      <NeckBar tags={article.type} publishDate={article.publishDate} view={article.view} />
+      <section className="content" dangerouslySetInnerHTML={{ __html: article.content}}></section>
+    </div>
+    <div className="side-container">
+    <Sidebar />
+    </div>
   </article>
 }
 

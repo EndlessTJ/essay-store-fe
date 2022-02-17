@@ -1,7 +1,7 @@
 import { useRef } from 'react'
 import { Routes, Route, Link, Navigate, useLocation, Location } from "react-router-dom";
 import { Layout, Menu } from 'antd';
-import { routes } from './router';
+import { routes } from './router/router';
 import { routesModel } from './model';
 import './App.scss';
 const { Header, Content, Footer } = Layout;

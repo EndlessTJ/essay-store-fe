@@ -20,6 +20,15 @@ export interface ArticleListModel {
   isFile: boolean; // 是否归档
 }
 
+// 列表请求参数数据模型
+export interface ListParamsModel {
+  selection?: string;
+  isFile?: Boolean;
+  isPublish?: Boolean;
+  title?: string;
+  type?: Array<string>
+}
+
 
 // antd Menu组件点击事件会掉函数的参数Model
 // export interface menuClickParamsModel {

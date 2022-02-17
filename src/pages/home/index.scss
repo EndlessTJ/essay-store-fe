@@ -1,0 +1,10 @@
+.main{
+  display: flex;
+  justify-content: space-between;
+  .list{
+    flex: 4;
+  }
+  .side-container{
+    flex: 1;
+  }
+}

@@ -10,7 +10,7 @@ function NeckBar(props:  {tags: Array<string>, publishDate: Date, view: number, 
   };
   return  <div className={cls}>
             <div className="tags">
-              {tags.map(item => <Tag key={item} className='tag' color="lime">{item}</Tag>)}
+              {tags.map(item => <Tag key={item} className='tag' color="red">{item}</Tag>)}
             </div>
             <div className="views">
               <span className='publish-date'><span><SendOutlined className='publish-icon' />&nbsp;&nbsp;</span>{formatDate(publishDate)}</span>

@@ -13,7 +13,7 @@ function App() {
       <Header>
         <div className="header-menu">
           <div className="logo">
-            <img src="logo/logo2.png" alt="" />
+            <img src="logo.png" alt="logo" />
           </div>
           <Menu theme="light" mode="horizontal" defaultSelectedKeys={[location.current.pathname.slice(1)]}>
             <Menu.Item className="menu-item" key="home" ><Link to="/home">列表</Link></Menu.Item>

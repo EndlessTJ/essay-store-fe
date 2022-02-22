@@ -29,7 +29,7 @@ function Sidebar(props: {className?: string, isSearch?: boolean}){
     </section>}
     <section className="tags section">
       <h2>推荐标签</h2>
-      {tags && tags.map(item => <Tag onClick={() => {searchTag(item.name)}} key={item._id} className='tag' color="lime">{item.name}</Tag>)}
+      {tags && tags.map(item => <Tag onClick={() => {searchTag(item.name)}} key={item._id} className='tag' color="red">{item.name}</Tag>)}
     </section>
   </aside>
 }

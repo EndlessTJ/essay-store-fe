@@ -3,6 +3,9 @@
   justify-content: space-between;
   .list{
     flex: 4;
+    .no-data{
+      margin-top: 120px;
+    }
   }
   .side-container{
     flex: 1;

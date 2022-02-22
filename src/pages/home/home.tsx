@@ -37,7 +37,7 @@ function Home() {
   },[searchStr, tagStr])
   return <div className="main">
     <div className="list">
-      {list?.length ? list.map(item => <ListItem key={item._id} data={item} />) : <Empty />}
+      {list?.length ? list.map(item => <ListItem key={item._id} data={item} />) : <Empty description="暂无数据～" className="no-data" />}
     </div>
     <div className="side-container">
       <Sidebar isSearch />

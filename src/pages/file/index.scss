@@ -1,4 +1,39 @@
 .file{
+  .description{
+    position: relative;
+    font-size: 15px;
+    line-height: 16px;
+    margin-bottom: 25px;
+    color: #333;
+    padding-left: 10px;
+    &::after{
+      content: '';
+      position: absolute;
+      width: 2px;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background-color: #e51b23;
+    }
+  }
+  .time-line{
+    margin-top: 50px;
+    width: 500px;
+    margin-left: -185px;
+    .item-label{
+      font-size: 16px;
+      font-weight: 600;
+      color: #e51b23;
+    }
+    .item-link{
+      font-size: 14px;
+      color: rgba(0,0,0,0.8);
+      cursor: pointer;
+      &:hover{
+        text-shadow: 1px 1px 2px #666;
+      }
+    }
+  }
   .no-data{
     margin-top: 120px;
   }

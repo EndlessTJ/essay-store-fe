@@ -1,6 +1,7 @@
   
 import request, { AxiosRequestConfig } from 'axios';
-const domain = 'http://127.0.0.1:3000'
+const env = process.env.NODE_ENV;
+const domain = env === 'development' ? 'http://127.0.0.1:3000': 'http://159.75.97.120:3000';
 
 export const get = async (url: string, config?: AxiosRequestConfig):Promise<any> => {
    const res = await request.get(domain + url, config);
